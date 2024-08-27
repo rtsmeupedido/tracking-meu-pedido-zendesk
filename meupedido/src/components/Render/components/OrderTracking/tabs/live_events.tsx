@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Divider, MuiIcon, Timeline } from "rtk-ux";
 import { list } from "../../../api";
-import * as dayjs from "dayjs";
+import * as _dayjs from "dayjs";
+const dayjs = _dayjs;
 
 export default function LiveEvents({ id, isModal }: any) {
     const [data, setData] = useState<any>([]);
